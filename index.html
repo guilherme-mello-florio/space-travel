@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellefair">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed">
+        <link rel="stylesheet" href="style.css">
+        <title>Space</title>   
+    </head>
+    <body class="body" id="pagina">
+            <header class="nav">
+                <img id="iconeNav" src="icone.svg"/>
+                <div id="retanguloNav" style="position: relative ;z-index: 1; margin-right: -50px; height: 1px; background-color: gray; width: 40%;"></div>
+                <nav class="navDiv">
+                    <button class="botao" id="botao1" style="border-bottom: 3px solid white;" onclick="mudaPara00()">
+                        <div class="numerosNav"><b>00</b></div>
+                        <div>HOME</div></button>
+                    <button class="botao" id="botao2" onclick="mudaPara01()">
+                        <div class="numerosNav"><b>01</b></div>
+                        <div>DESTINATION</div></button>
+                    </button>    
+                    <button class="botao" id="botao3" onclick="mudaPara02()">
+                        <div class="numerosNav"><b>02</b></div>
+                        <div>CREW</div></button>
+                    </button>
+                    <button class="botao" id="botao4" onclick="mudaPara03()">
+                        <div class="numerosNav"><b>03</b></div>
+                        <div>TECHNOLOGY</div></button>
+                    </button>
+                </nav>
+                <img src="menu.svg" class="menuCelular" onclick="abreMenuCelular()">
+            </header>
+            <main class="caixaPaginaInicial" id="divMainInicial">
+                <div class="textoPaginaInicial">
+                    <p class="textoSecundario">SO, YOU WANT TO TRAVEL TO</p>
+                    <p class="textoMain">SPACE</p>
+                    <p class="textoTerciario">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+                </div>
+                <div class="botaoExplorarAtivo">
+                    <button class="botaoExplorar" onclick="mudaPara01()">
+                        EXPLORE
+                    </button>
+                </div>
+            </main>
+
+            <nav class="navDivCelular">
+                <img src="X.svg" style="margin-top: 10%; margin-right: 10%; margin-bottom: 10%;" onclick="fechaMenuCelular()">
+                <section class="caixaBotoesCelular">
+                    <button class="botao" id="botao11" style="border-right: 3px solid white;" onclick="mudaPara00()">
+                        <div class="numerosNav"><b>00</b></div>
+                        <div>HOME</div></button>
+                    <button class="botao" id="botao12" onclick="mudaPara01()">
+                        <div class="numerosNav"><b>01</b></div>
+                        <div>DESTINATION</div></button>
+                    </button>    
+                    <button class="botao" id="botao13" onclick="mudaPara02()">
+                        <div class="numerosNav"><b>02</b></div>
+                        <div>CREW</div></button>
+                    </button>
+                    <button class="botao" id="botao14" onclick="mudaPara03()">
+                        <div class="numerosNav"><b>03</b></div>
+                        <div>TECHNOLOGY</div></button>
+                    </button>
+                </section>
+            </nav>
+
+
+
+                <!-- Fim da primeira pagina -->
+
+
+
+            <main class="caixaPaginaSecundaria">
+                <div id="destinationTitle" style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 4.75px; color: white; display: flex;"><div style="color: #979797; margin-right: 30px;"><b>01</b></div> PICK YOUR DESTINATION</div>
+                    <div class="caixaSecundariaPaginaSecundaria">
+                        <img id="imagemDestination" src="moon.png">
+                        <section class="moon">
+                            <nav class="navDestination">
+                                <button class="botaoDestination" id="botao5" style="border-bottom: 3px solid white; color: white;" onclick="mudaDestinationPara00()">MOON</button>
+                                <button class="botaoDestination" id="botao6" onclick="mudaDestinationPara01()">MARS</button>    
+                                <button class="botaoDestination" id="botao7" onclick="mudaDestinationPara02()">EUROPA</button>
+                                <button class="botaoDestination" id="botao8" onclick="mudaDestinationPara03()">TITAN</button>
+                            </nav>
+                            <p class="astroDestination">MOON</p>
+                            <p class="textoDestination">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                            <img class="retanguloDestination" src="rectangle.png" />
+                            <content class="contentInfoDestination">
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">AVG. DISTANCE</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">384,400 KM</p>
+                                </content>
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">EST. TRAVEL TIME</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">3 DAYS</p>
+                                </content>
+                            </content>
+                        </section>
+
+
+                        <section class="mars">
+                            <nav class="navDestination">
+                                <button class="botaoDestination" id="botao5" onclick="mudaDestinationPara00()">MOON</button>
+                                <button class="botaoDestination" id="botao6" style="border-bottom: 3px solid white; color: white;" onclick="mudaDestinationPara01()">MARS</button>    
+                                <button class="botaoDestination" id="botao7" onclick="mudaDestinationPara02()">EUROPA</button>
+                                <button class="botaoDestination" id="botao8" onclick="mudaDestinationPara03()">TITAN</button>
+                            </nav>
+                            <p class="astroDestination">MARS</p>
+                            <p class="textoDestination">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!</p>
+                            <img class="retanguloDestination" src="rectangle.png" />
+                            <content class="contentInfoDestination">
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">AVG. DISTANCE</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">225 MIL. KM</p>
+                                </content>
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">EST. TRAVEL TIME</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">9 MONTHS</p>
+                                </content>
+                            </content>
+                        </section>
+
+                        <section class="europa">
+                            <nav class="navDestination">
+                                <button class="botaoDestination" id="botao5"  onclick="mudaDestinationPara00()">MOON</button>
+                                <button class="botaoDestination" id="botao6" onclick="mudaDestinationPara01()">MARS</button>    
+                                <button class="botaoDestination" id="botao7" style="border-bottom: 3px solid white; color: white;" onclick="mudaDestinationPara02()">EUROPA</button>
+                                <button class="botaoDestination" id="botao8" onclick="mudaDestinationPara03()">TITAN</button>
+                            </nav>
+                            <p class="astroDestination">EUROPA</p>
+                            <p class="textoDestination">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                            <img class="retanguloDestination" src="rectangle.png" />
+                            <content class="contentInfoDestination">
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">AVG. DISTANCE</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">628 MIL. KM</p>
+                                </content>
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">EST. TRAVEL TIME</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">3 YEARS</p>
+                                </content>
+                            </content>
+                        </section>
+
+                        <section class="titan">
+                            <nav class="navDestination">
+                                <button class="botaoDestination" id="botao5" onclick="mudaDestinationPara00()">MOON</button>
+                                <button class="botaoDestination" id="botao6" onclick="mudaDestinationPara01()">MARS</button>    
+                                <button class="botaoDestination" id="botao7" onclick="mudaDestinationPara02()">EUROPA</button>
+                                <button class="botaoDestination" id="botao8" style="border-bottom: 3px solid white; color: white;" onclick="mudaDestinationPara03()">TITAN</button>
+                            </nav>
+                            <p class="astroDestination">TITAN</p>
+                            <p class="textoDestination">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+                            <img class="retanguloDestination" src="rectangle.png" />
+                            <content class="contentInfoDestination">
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">AVG. DISTANCE</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">1.6 BIL. KM</p>
+                                </content>
+                                <content class="flexGenerico">
+                                    <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2.35px; color: #D0D6F9;">EST. TRAVEL TIME</p>
+                                    <p style="font-family: 'Bellefair', sans-serif; font-size: 28px; color: white; margin: 0px;">7 YEARS</p>
+                                </content>
+                            </content>
+                        </section>
+
+
+                    </div>
+            </main>
+
+
+
+            <!-- Fim da segunda pagina -->
+            
+
+            <main class="caixaPaginaTerciaria">
+                <section class="caixaSecundariaPaginaTerciaria">
+                    <div class="titleCrew"><div style="color: #979797; margin-right: 30px;"><b>02</b></div> MEET YOUR CREW</div>
+                    <content class="douglas">
+                        <p class="textoSecundarioCrew">COMMANDER</p>
+                        <p class="textoMainCrew">DOUGLAS HURLEY</p>
+                        <p class="textoConteudoCrew">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                        <nav class="crewNav">
+                            <button class="botaoCrew" style="opacity: 100%;" onclick="mudaCrewPara00()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara01()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara02()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara03()"></button>
+                        </nav>
+                    </content>
+
+                    <content class="mark">
+                        <p class="textoSecundarioCrew">MISSION SPECIALIST</p>
+                        <p class="textoMainCrew">MARK SHUTTLEWORTH</p>
+                        <p class="textoConteudoCrew">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                        <nav class="crewNav">
+                            <button class="botaoCrew"  onclick="mudaCrewPara00()"></button>
+                            <button class="botaoCrew" style="opacity: 100%;" onclick="mudaCrewPara01()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara02()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara03()"></button>
+                        </nav>
+                    </content>
+
+                    <content class="victor">
+                        <p class="textoSecundarioCrew">PILOT</p>
+                        <p class="textoMainCrew">VICTOR GLOVER</p>
+                        <p class="textoConteudoCrew">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+                        <nav class="crewNav">
+                            <button class="botaoCrew" onclick="mudaCrewPara00()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara01()"></button>
+                            <button class="botaoCrew" style="opacity: 100%;" onclick="mudaCrewPara02()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara03()"></button>
+                        </nav>
+                    </content>
+
+                    <content class="anousheh">
+                        <p class="textoSecundarioCrew">FLIGHT ENGINEER</p>
+                        <p class="textoMainCrew">ANOUSHEH ANSARI</p>
+                        <p class="textoConteudoCrew">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+                        <nav class="crewNav">
+                            <button class="botaoCrew" onclick="mudaCrewPara00()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara01()"></button>
+                            <button class="botaoCrew" onclick="mudaCrewPara02()"></button>
+                            <button class="botaoCrew" style="opacity: 100%;" onclick="mudaCrewPara03()"></button>
+                        </nav>
+                    </content>
+                    <div id="caixaImagemCrewCelular">
+                        <img src="douglas.png" id="imagemCrewCelular">
+                    </div>
+                </section>
+                <div id="caixaImagemCrew">
+                    <img src="douglas.png" id="imagemCrew">
+                </div>
+            </main>
+
+            
+
+            <!-- Fim da terceira pagina -->
+
+            <main class="caixaPaginaQuartenaria">
+                <div class="titleTechnologyMobile"><div style="color: #979797; margin-right: 30px;"><b>03</b></div> SPACE LAUNCH 101</div>
+                <section class="caixaSecundariaPaginaQuartenaria">
+                    <div class="titleTechnologyDesktop"><div style="color: #979797; margin-right: 30px;"><b>03</b></div> SPACE LAUNCH 101</div>
+                    <div class="launchvehicle">
+                        <nav class="caixaBotoesTechnology">
+                            <button style="background-color: white; color: black; border-color: black" class="botaoTechnology" onclick="mudaTechnologyPara00()">1</button>
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara01()">2</button>
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara02()">3</button>
+                        </nav>
+                        <content style="width: 80%;">
+                            <p class="textoSecundarioTechnology">THE TERMINOLOGY...</p>
+                            <p class="textoMainTechnology">LAUNCH VEHICLE</p>
+                            <p class="textoConteudoTechnology">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                        </content>
+                    </div>
+
+                    <div class="spaceport">
+                        <nav class="caixaBotoesTechnology">
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara00()">1</button>
+                            <button style="background-color: white; color: black; border-color: black" class="botaoTechnology" onclick="mudaTechnologyPara01()">2</button>
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara02()">3</button>
+                        </nav>
+                        <content style="width: 80%;">
+                            <p class="textoSecundarioTechnology">THE TERMINOLOGY...</p>
+                            <p class="textoMainTechnology">SPACEPORT</p>
+                            <p class="textoConteudoTechnology">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch.</p>
+                        </content>
+                    </div>
+
+                    <div class="spacecapsule">
+                        <nav class="caixaBotoesTechnology">
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara00()">1</button>
+                            <button class="botaoTechnology" onclick="mudaTechnologyPara01()">2</button>
+                            <button style="background-color: white; color: black; border-color: black;" class="botaoTechnology" onclick="mudaTechnologyPara02()">3</button>
+                        </nav>
+                        <content style="width: 80%;">
+                            <p class="textoSecundarioTechnology">THE TERMINOLOGY...</p>
+                            <p class="textoMainTechnology">SPACE CAPSULE</p>
+                            <p class="textoConteudoTechnology">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                        </content>
+                    </div>
+
+
+                </section>
+                <img src="launchvehicle.jpg" id="imagemTechnology">
+            </main>
+    </body>
+</html>
